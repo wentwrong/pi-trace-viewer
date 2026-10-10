@@ -1,0 +1,32 @@
+{
+  "name": "pi-trace-viewer",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local-first, single-page viewer for Pi Agent Harness JSONL session traces.",
+  "keywords": [
+    "pi",
+    "agent",
+    "trace",
+    "jsonl",
+    "viewer",
+    "llm"
+  ],
+  "license": "UNLICENSED",
+  "type": "module",
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && node scripts/inline-dist.mjs",
+    "preview": "vite preview",
+    "test": "npm run build && node scripts/check-dist.mjs"
+  },
+  "dependencies": {
+    "svelte": "^5.57.2"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^7.3.1",
+    "vite": "^8.3.4"
+  }
+}
